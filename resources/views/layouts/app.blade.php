@@ -36,13 +36,16 @@
                         @guest
                         @else
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">Menu 1</a>
+                                <a class="nav-link" href="{{ route('login') }}">Menu Super Admin</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">Menu 2</a>
+                                <a class="nav-link" href="{{ route('login') }}">Menu Amin</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">Menu 3</a>
+                                <a class="nav-link" href="{{ route('login') }}">Menu User</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('login') }}">Menu Global User</a>
                             </li>
                         @endguest
                     </ul>
