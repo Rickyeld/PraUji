@@ -35,6 +35,7 @@
                     <ul class="navbar-nav mr-auto">
                         @guest
                         @else
+                        @role('admin')
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('login') }}">Menu Super Admin</a>
                             </li>
@@ -47,6 +48,7 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('login') }}">Menu Global User</a>
                             </li>
+                            @endrole
                         @endguest
                     </ul>
 
